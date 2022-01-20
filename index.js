@@ -15,12 +15,13 @@ const questions = [
     {
         type: "input",
         name: "description",
-        message: "Add a description for your project",
+        message: "Add a  brif description for your project",
       },
       {
-          type: "input",
+          type: "list",
           name: "licence",
           message: "What license are you using for your project",
+          options: ["MIT", "APACHE 2.0", "GPLV3", "ISC"]
       },
       {
         type: "input",
@@ -43,8 +44,17 @@ const questions = [
           message: "What is this project going to be used for",
       },
       {
+          type: "input",
+          name: "contributor",
+          message: "Who is contributing to this project",
 
-      }
+      },
+      {
+          type: "input",
+          name: "test",
+          message: "What command is required to run test",
+          default: "npm",
+      },
 
 ];
 
