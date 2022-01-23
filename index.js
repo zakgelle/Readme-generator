@@ -19,18 +19,18 @@ const questions = [
       },
       {
           type: "list",
-          name: "licence",
+          name: "license",
           message: "What license are you using for your project",
-          options: ["MIT", "APACHE 2.0", "GPLV3", "ISC"]
+          choices: ["MIT", "APACHE 2.0", "GPLV3", "ISC", "no license"]
       },
       {
         type: "input",
-        name: "github Name",
+        name: "githubName",
         message: "What is your Github username?",
       },
       {
         type: "input",
-        name: "email Address",
+        name: "emailAddress",
         message: "What is your email address?",
       },
       {
